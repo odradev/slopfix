@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slopfix — we refactor vibecoded codebases</title>
+<meta name="description" content="Your AI-built product works, but past 100,000 lines every change breaks two things. Three senior engineers make your codebase maintainable again. One week, fixed price, guaranteed.">
+<style>
+  body {
+    font-family: Charter, Georgia, "Times New Roman", serif;
+    color: #111;
+    background: #fff;
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 2rem 0 0.5rem; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 0.5rem; }
+  a { color: #0000ce; }
+  .tagline { margin-top: 0; color: #444; }
+  .hero-marquee {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+  }
+  .hero-marquee .bounce-x {
+    position: absolute;
+    animation: bounce-x 6.7s linear infinite alternate;
+  }
+  .hero-marquee h1 {
+    margin: 0;
+    animation: bounce-y 2.5s linear infinite alternate;
+  }
+  @keyframes bounce-x {
+    from { left: 0; transform: translateX(0); }
+    to { left: 100%; transform: translateX(-100%); }
+  }
+  @keyframes bounce-y {
+    from { transform: translateY(0); }
+    to { transform: translateY(112px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-marquee .bounce-x, .hero-marquee h1 { animation: none; }
+  }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.95em; }
+  .team { display: flex; gap: 1rem; margin: 1.5rem 0; }
+  .team figure { flex: 1; min-width: 0; margin: 0; }
+  @media (max-width: 480px) {
+    .team { flex-direction: column; }
+    .team figure { max-width: 360px; }
+  }
+  .team img { width: 100%; height: auto; display: block; }
+  .team figcaption { margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.4; }
+  .hn-announcement {
+    border: 1px solid #ccc;
+    padding: 0.65rem 0.8rem;
+    margin: 0.9rem 0;
+    background: #f6f6ef;
+    line-height: 1.35;
+  }
+  .hn-announcement p { margin: 1; }
+  .hn-announcement p + p { margin-top: 0.35rem; }
+  .hn-announcement a { color: #ff6600; }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    color: #555;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero-marquee">
+    <div class="bounce-x"><h1>Slopfix</h1></div>
+  </div>
+  <br>
+  <p class="tagline"><b>Slopfix</b> is a team of three senior engineers who
+  refactor vibecoded codebases back to maintainability.</p>
+</header>
+
+<main>
+
+<div class="hn-announcement">
+  <p>We posted on <a href="https://news.ycombinator.com/item?id=48823359">Hacker News</a> and made it into the frontpage.</p>
+  <p>It caused a lot of great feedback. Thank you everyone!</p>
+</div>
+
+<h2>Did that happen to you?</h2>
+
+<p>You have an AI-generated codebase that works, but adding a feature now
+takes days and breaks two other things? This happens to every vibecoded
+project past a certain size: the agent stops seeing the whole picture and
+starts duplicating code instead of finding it. We can help.</p>
+<h2>What we do?</h2>
+
+<p><strong>We analyze your codebase for free.</strong> If we don't think we
+can help, we say so and you've lost nothing. If we can, you get a fixed price
+and a committed reduction target — something like "100,000 lines down to
+35,000, same functionality."</p>
+
+<p><strong>Then we do one week of focused work.</strong> Before touching
+anything, we sit down with you and write out exactly what your app does,
+screen by screen, endpoint by endpoint. That checklist is our safety net and
+yours. Then we cut: the fourteen date formatters become one, the hand-rolled
+framework becomes a library, the duplicated logic collapses. Where the code is
+beyond saving, we distill what it does and rebuild that part clean.</p>
+
+<p><strong>You keep everything.</strong> The smaller codebase, the QA
+checklist, and a set of guardrails — a CLAUDE.md, lint rules, CI checks —
+that slow the slop down when you go back to building. Plus two weeks of
+warranty: if we broke something that worked before, we fix it free.</p>
+
+<p>Yes, we use Claude Code too. On a very short leash. The difference is
+thirty years of combined experience about what maintainable code looks like,
+and the agent doesn't get a vote.</p>
+
+<h2>What it costs?</h2>
+
+<p><strong>One week. Three senior engineers. $10,000.</strong> We commit to a
+reduction target up front, and you pay in proportion to how much of it we hit.
+Promised 50% and delivered only 20%? That's 40% of the target, so you pay
+$4,000. Hit the target or beat it, you pay full price.</p>
+
+<p>Lines are counted by <code>scc</code>, non-blank and non-comment, and the
+contract bans code golf. We don't win by deleting your comments or compressing
+your code into something clever and unreadable.</p>
+
+<h2>We are not agents</h2>
+
+<div class="team">
+  <figure>
+    <img src="img/maciej.png" alt="Maciej" width="360" height="480">
+    <figcaption><strong>Maciej</strong><br>Head of Engineering<br>
+    <a href="http://github.com/zie1ony">GitHub</a></figcaption>
+  </figure>
+  <figure>
+    <img src="img/kuba.png" alt="Kuba" width="360" height="480">
+    <figcaption><strong>Kuba</strong><br>Workhorse of Engineering<br>
+    <a href="http://github.com/kubaplas">GitHub</a></figcaption>
+  </figure>
+  <figure>
+    <img src="img/krzysztof.png" alt="Krzysztof" width="360" height="480">
+    <figcaption><strong>Krzysztof</strong><br>Muscle of Engineering<br>
+    <a href="http://github.com/kpob">GitHub</a></figcaption>
+  </figure>
+</div>
+
+<h2>Talk to us</h2>
+
+<p>We're real people and we'd rather talk than exchange forms. If the story
+above sounds like your last three months, get in touch: <a href="mailto:maciej@odra.dev">maciej@odra.dev</a>.</p>
+
+<p>Bring your repo. The analysis is free either way.</p>
+
+</main>
+
+<footer>
+  <p>No cookies. No tracking. No JavaScript. Real people.</p>
+</footer>
+
+</body>
+</html>
